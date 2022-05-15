@@ -12,13 +12,12 @@ async function getGames() {
     resultsContainer.innerHTML = "";
 
     for (let i = 0; i < games.length; i++) {
-        console.log(games[i].games_count);
 
         if (i === 8) {
             break;
         }
 
-        resultsContainer.innerHTML += `<div><h2>${games[i].name}</h2><p>${games[i].rating}</p><p>${games[i].tags}</p></div>`;
+        resultsContainer.innerHTML += `<div><h2>${games[i].name}</h2><p>${games[i].rating}</p></div>`;
     }
 
 }
